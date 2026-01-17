@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog CMS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container d-flex justify-content-between">
+    
+    <!-- Left side: Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto"> <!-- me-auto pushes items to the left -->
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="author.html">Authors</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin/dashboard.html">Admin</a></li>
+      </ul>
+    </div>
+
+    <!-- Right side: Logo -->
+    <!-- <a class="navbar-brand ms-auto" href="index.html">
+      <img src="assets/img/MyBlog.png" alt="My Blog Logo" width="40" height="40" class="d-inline-block align-text-top">
+    </a> --> 
+
+        <a class="navbar-brand ms-auto" href="index.html">
+        My<span>Blog</span>
+        </a>
+
+   
+    
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+
+  <!-- Hero / Featured Post -->
+  <section class="container my-4">
+    <div class="card mb-4">
+      <!-- <img src="assets/img/img1.jpg" class="card-img-top" alt="Featured Post"> -->
+      <img src="assets/img/img1.jpg" class="card-img-top img-fluid" alt="Featured Post" style="max-height:350px; object-fit:cover;">
+
+      <div class="card-body">
+        <h2 class="card-title">Featured Post Title</h2>
+        <p class="card-text">This is a short description of the featured post. It highlights the main story of the day.</p>
+        <a href="post.html" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Latest Posts -->
+      <div class="col-md-8">
+        <h3 class="mb-3">Latest Posts</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Post Card -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/img2.jpg" class="card-img-top" alt="Post Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">Short excerpt of the post goes here...</p>
+                <a href="post.html" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat for more posts -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/img/img3.jpg" class="card-img-top" alt="Post Thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">Post Title 2</h5>
+                <p class="card-text">Short excerpt of the post goes here...</p>
+                <a href="post.html" class="btn btn-sm btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <nav class="mt-4">
+          <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <!-- Search -->
+        <div class="mb-4">
+          <h4>Search</h4>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search posts">
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </form>
+        </div>
+
+        <!-- Categories -->
+        <div class="mb-4">
+          <h4>Categories</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="category.html">Tech</a></li>
+            <li class="list-group-item"><a href="category.html">Business</a></li>
+            <li class="list-group-item"><a href="category.html">Lifestyle</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Posts -->
+        <div class="mb-4">
+          <h4>Popular Posts</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="post.html">Popular Post 1</a></li>
+            <li class="list-group-item"><a href="post.html">Popular Post 2</a></li>
+            <li class="list-group-item"><a href="post.html">Popular Post 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-4 p-4 text-center">
+    <p>&copy; 2026 My Blog CMS | <a href="#" class="text-white">Privacy Policy</a> | Newsletter Signup</p>
+  </footer>
+
+  <!-- Bootstrap JS + jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

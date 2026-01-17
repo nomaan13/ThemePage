@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Category | MyBlog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+ 
+
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container d-flex justify-content-between">
+    
+    <!-- Left side: Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto"> <!-- me-auto pushes items to the left -->
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="author.html">Authors</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin/dashboard.html">Admin</a></li>
+      </ul>
+    </div>
+
+ 
+
+        <a class="navbar-brand ms-auto" href="index.html">
+        My<span>Blog</span>
+        </a>
+
+   
+    
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+  <!-- Category Header -->
+  <header class="category-header">
+    <div class="container text-center">
+      <h1>Technology</h1>
+      <p>Explore the latest articles, insights, and updates in the world of technology. From AI advancements to cybersecurity trends, stay informed with our curated tech content.</p>
+      <span class="badge bg-light text-primary p-2 mt-2">48 Articles</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="container my-5">
+    <div class="row">
+      
+      <!-- Sidebar: Categories -->
+      <aside class="col-lg-3 mb-4">
+        <div class="sidebar-card">
+          <div class="card-header text-white">
+            <i class="fas fa-list me-2"></i>Categories
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item active">
+              <a href="category.html?cat=tech" class="text-decoration-none">
+                <i class="fas fa-microchip"></i>Technology
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=business" class="text-decoration-none">
+                <i class="fas fa-chart-line"></i>Business
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=travel" class="text-decoration-none">
+                <i class="fas fa-globe-americas"></i>Travel
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=food" class="text-decoration-none">
+                <i class="fas fa-utensils"></i>Food
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=lifestyle" class="text-decoration-none">
+                <i class="fas fa-heart"></i>Lifestyle
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=health" class="text-decoration-none">
+                <i class="fas fa-heartbeat"></i>Health
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="category.html?cat=sports" class="text-decoration-none">
+                <i class="fas fa-running"></i>Sports
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+       
+      </aside>
+      
+      <!-- Posts Grid -->
+      <div class="col-lg-9">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="mb-0">Latest Tech Articles</h3>
+          <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <i class="fas fa-sort me-1"></i>Sort By
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Newest First</a></li>
+              <li><a class="dropdown-item" href="#">Most Popular</a></li>
+              <li><a class="dropdown-item" href="#">Top Rated</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+          <!-- Post Card 1 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="AI Technology">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Technology</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Future of Artificial Intelligence in 2026</h5>
+                <p class="card-text">Explore how AI is transforming industries and what we can expect in the coming years with advancements in machine learning and neural networks.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 5 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post Card 2 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Web Development">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Web Development</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Modern Web Development Trends to Follow</h5>
+                <p class="card-text">Discover the latest frameworks, tools, and methodologies that are shaping the future of web development in 2026.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 7 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post Card 3 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cybersecurity">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Cybersecurity</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cybersecurity Threats in the Age of IoT</h5>
+                <p class="card-text">As IoT devices become ubiquitous, understanding security vulnerabilities and protection strategies is more important than ever.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 6 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post Card 4 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Quantum Computing">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Quantum Computing</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Quantum Computing Breakthroughs in 2026</h5>
+                <p class="card-text">Learn about the latest developments in quantum computing and how they're poised to revolutionize computation as we know it.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 8 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post Card 5 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Data Science">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Data Science</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Data Science for Business Decision Making</h5>
+                <p class="card-text">How organizations are leveraging data science and analytics to drive strategic decisions and gain competitive advantages.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 6 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Post Card 6 -->
+          <div class="col">
+            <div class="card">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cloud Technology">
+                <div class="category-badge position-absolute top-0 start-0 m-3">Cloud Technology</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Hybrid Cloud Solutions for Enterprise</h5>
+                <p class="card-text">Exploring the benefits and implementation strategies for hybrid cloud architectures in modern enterprise environments.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="post.html" class="btn btn-outline-primary">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                  <small class="text-muted"><i class="far fa-clock me-1"></i> 7 min read</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <!-- Pagination -->
+        <nav class="my-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left me-1"></i> Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next <i class="fas fa-chevron-right ms-1"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer class="bg-dark text-white mt-4 p-4 text-center">
+    <p>&copy; 2026 My Blog CMS | <a href="#" class="text-white">Privacy Policy</a> | Newsletter Signup</p>
+  </footer>
+
+  <!-- Bootstrap JS + jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Simple script for adding active class to clicked category items
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryItems = document.querySelectorAll('.list-group-item');
+      
+      categoryItems.forEach(item => {
+        item.addEventListener('click', function() {
+          categoryItems.forEach(i => i.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+      
+      // Add hover effect to cards
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

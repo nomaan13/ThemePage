@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post - Understanding Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between">
+      <!-- Left side: Navigation -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="category.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="author.html">Authors</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin/dashboard.html">Admin</a></li>
+        </ul>
+      </div>
+      <!-- Right side: Logo -->
+      <a class="navbar-brand ms-auto" href="index.html">My<span>Blog</span></a>
+    </div>
+  </nav>
+
+  <!-- Post Content -->
+  <article class="container my-5 post-content">
+    <h1 class="post-title">Understanding Bootstrap Grid</h1>
+    <p class="text-muted">By <a href="author.html">John Doe</a> | January 17, 2026</p>
+    <img src="images/post-banner.jpg" alt="Post Banner" class="post-banner mb-4">
+
+    <p>
+      Bootstrap’s grid system is the heart of its responsive design. It uses a series of containers, rows, and columns to layout and align content...
+    </p>
+    <p>
+      The grid is built with flexbox and allows up to 12 columns across the page. You can use classes like <code>.col-md-6</code> to define column widths...
+    </p>
+
+    <blockquote class="blockquote my-4">
+      <p>"Good design is responsive design."</p>
+    </blockquote>
+
+    <p>
+      With Bootstrap 5, the grid system has become even more flexible, supporting auto-layout columns and improved alignment utilities...
+    </p>
+  </article>
+
+  <!-- Comments Section -->
+  <section class="container my-5 comments">
+    <h3>Comments</h3>
+    <div class="comment mb-3">
+      <strong>Alice:</strong>
+      <p>Great explanation! Helped me understand the grid better.</p>
+    </div>
+    <div class="comment mb-3">
+      <strong>Bob:</strong>
+      <p>Can you also cover how to use nested grids?</p>
+    </div>
+
+    <!-- Add Comment Form -->
+    <form class="mt-4">
+      <div class="mb-3">
+        <label for="commentText" class="form-label">Leave a Comment</label>
+        <textarea class="form-control" id="commentText" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-4 mt-4">
+    <p>&copy; 2026 My Blog CMS</p>
+  </footer>
+
+  <!-- Bootstrap JS + jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
