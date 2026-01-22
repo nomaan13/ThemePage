@@ -1,0 +1,105 @@
+
+/* Main Styles for PortfolioPro CMS */
+
+/* Page Structure */
+.page-content {
+    padding-top: 80px;
+    min-height: 80vh;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Service Icons */
+.service-icon {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Project Cards */
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Blog Cards */
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Form Styles */
+.contact-form .form-control {
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #667eea !important;
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #667eea !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-content {
+        padding-top: 70px;
+    }
+}
